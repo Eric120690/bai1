@@ -855,14 +855,7 @@ function renderFlashcard() {
       <span class="arrow-nav-hint">Phím ← → để điều hướng &nbsp;·&nbsp; Space để lật</span>
       <button class="btn-arrow" onclick="skipWord()" title="Tiếp theo (→)">→</button>
     </div>
-    <div class="typing-zone" id="typingZone">
-      <div class="typing-label">⌨ Gõ lại từ tiếng Anh để luyện nhớ &nbsp;(Enter = gợi ý chữ đầu)</div>
-      <input type="text" class="typing-input" id="typingInput"
-        placeholder="${c.word.replace(/./g,'·')}"
-        oninput="checkTyping()" onkeydown="handleKey(event)"
-        autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
-      <div class="typing-feedback" id="typingFeedback"></div>
-    </div>
+
   `;
 
   isFlipped=false;
